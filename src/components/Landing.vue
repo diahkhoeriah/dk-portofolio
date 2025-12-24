@@ -4,7 +4,6 @@
   <!-- Navbar -->
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <!-- <h1 class="text-xl font-bold">DK</h1> -->
       <a href="/"class="text-xl font-bold">DK</a>
       <nav class="space-x-4">
         <a href="#about" class="hover:text-blue-600">About</a>
