@@ -1,16 +1,11 @@
-<script setup lang="ts">
-// impo { ref } from 'vue'
-
-// defineProps<{ msg: string }>()
-
-// const count = ref(0)
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <!-- Navbar -->
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">DK</h1>
+      <!-- <h1 class="text-xl font-bold">DK</h1> -->
+      <a href="/"class="text-xl font-bold">DK</a>
       <nav class="space-x-4">
         <a href="#about" class="hover:text-blue-600">About</a>
         <a href="#skills" class="hover:text-blue-600">Skills</a>
