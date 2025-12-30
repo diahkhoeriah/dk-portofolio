@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 // import halaman
 import Landing from '@/components/Landing.vue'
-import CV from '@/components/CV.vue'
+import CV from '@/components/cv.vue'
 
 const routes = [
   {
@@ -11,7 +11,7 @@ const routes = [
     component: Landing,
   },
   {
-    path: '/CV',
+    path: '/cv',
     name: 'CV',
     component: CV,
   },
