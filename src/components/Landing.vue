@@ -19,7 +19,7 @@
     <p class="text-xl mb-4">Frontend Web Developer | Fullstack Wordpress CMS, Laravel October CMS, Vue.js, Typescript, Nuxt.js, Looker Studio  </p>
     <div class="space-x-4">
       <a href="#contact" class="border border-blue-600 text-blue-600 px-6 py-2 rounded hover:bg-blue-600 hover:text-white">Contact Me</a>
-      <a href="/cv" class="border border-blue-600 text-blue-600 px-6 py-2 rounded hover:bg-blue-600 hover:text-white active:bg-blue-600">Download CV</a>
+      <a href="/CV" class="border border-blue-600 text-blue-600 px-6 py-2 rounded hover:bg-blue-600 hover:text-white active:bg-blue-600">Download CV</a>
     </div>
   </section>
 
