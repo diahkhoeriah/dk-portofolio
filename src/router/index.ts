@@ -11,7 +11,7 @@ const routes = [
     component: Landing,
   },
   {
-    path: '/cv',
+    path: '/CV',
     name: 'CV',
     component: CV,
   },
