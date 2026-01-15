@@ -34,9 +34,10 @@
             <li>CSS, SCSS</li>
             <li>JavaScript</li>
             <li>Tailwind CSS</li>
-            <li>Vue.Js</li>
+            <li>Vue</li>
+            <li>React</li>
             <li>TypeScript</li>
-            <li>Nuxt.js</li>
+            <li>Nuxt</li>
             <li>PHP</li>
             <li>MySQL</li>
             <li>REST API</li>
