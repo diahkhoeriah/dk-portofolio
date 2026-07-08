@@ -43,7 +43,6 @@
             <li>REST API</li>
             <li>Wordpress CMS</li>
             <li>Git</li>
-            <li>Looker Studio</li>
             <li>MS.Office</li>
           </ul>
         </div>
@@ -77,7 +76,7 @@
         <div>
           <h2 class="py-2 px-4 bg-[#0F172A] text-2xl font-bold uppercase text-[#D9C3BF]">SUMMARY</h2>
           <div class="px-4 mt-5 mb-14">
-            <p class="mt-2 mb-6 leading-[1.8]">I am a frontend web developer with over 7 years of experience in building responsive web interfaces using Laravel alongside OctoberCMS, WordPress CMS, and modern technologies such as Vue.js, TypeScript, and Nuxt.js. I am skilled in processing and visualizing data using Looker Studio to generate informative, interactive, and easy-to-understand reports and dashboards with data sources from BigQuery and CSV files.  Likes to learn new things and is used to working in teams and individually.</p>
+            <p class="mt-2 mb-6 leading-[1.8]">I am a frontend web developer with over 7 years of experience in building responsive web interfaces using Laravel alongside OctoberCMS, WordPress CMS, and modern technologies such as Vue.js, TypeScript, and Nuxt.js. Likes to learn new things and is used to working in teams and individually.</p>
           </div>
         </div>
         <div>
@@ -87,7 +86,6 @@
             <i class="text-lg">MNC Innovation Center, PT. MNC KABEL MEDIACOM | August 2018 - Present</i>
             <ul class="list-disc mt-2 mb-6 pl-3">
               <li>Create responsive website using Wordpress CMS, Vue.js, Nuxt.js Typescript, based on the design or prototype has been created and integrate it with API. </li>
-              <li>Built internal dashboards using Looker Studio for business reporting.</li>
             </ul>
           </div>
           <div class="px-4 mb-14">

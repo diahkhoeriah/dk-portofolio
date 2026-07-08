@@ -16,7 +16,7 @@
   
   <section class="text-center py-20 bg-blue-100">
     <h2 class="text-4xl font-bold mb-2">Hi, I’m Diah Khoeriah 👋</h2>
-    <p class="text-xl mb-4">Frontend Web Developer | Fullstack Wordpress CMS, Laravel October CMS, Vue.js, Typescript, Nuxt.js, Looker Studio  </p>
+    <p class="text-xl mb-4">Frontend Web Developer | Fullstack Wordpress CMS, Laravel October CMS, Vue.js, Typescript, Nuxt.js</p>
     <div class="space-x-4">
       <a href="#contact" class="border border-blue-600 text-blue-600 px-6 py-2 rounded hover:bg-blue-600 hover:text-white">Contact Me</a>
       <a href="/cv" class="border border-blue-600 text-blue-600 px-6 py-2 rounded hover:bg-blue-600 hover:text-white active:bg-blue-600">Download CV</a>
@@ -26,7 +26,7 @@
   <!-- About Me -->
   <section id="about" class="py-16 px-4 max-w-4xl mx-auto">
     <h3 class="text-2xl font-bold mb-4">About Me</h3>
-    <p class="text-justify">I am a frontend web developer with over 7 years of experience in building responsive web interfaces using Laravel alongside OctoberCMS, WordPress CMS, and modern technologies such as Vue.js, TypeScript, and Nuxt.js. I am skilled in processing and visualizing data using Looker Studio to generate informative, interactive, and easy-to-understand reports and dashboards with data sources from BigQuery and CSV files.  Likes to learn new things and is used to working in teams and individually.</p>
+    <p class="text-justify">I am a frontend web developer with over 7 years of experience in building responsive web interfaces using Laravel alongside OctoberCMS, WordPress CMS, and modern technologies such as Vue.js, TypeScript, and Nuxt.js. Likes to learn new things and is used to working in teams and individually.</p>
   </section>
 
   <!-- Skills -->
@@ -97,11 +97,6 @@
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg"
               class="w-12 h-12 mx-auto" />
           <p class="mt-2">Nuxt.js</p>
-        </div>
-        <div>
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/looker.svg"
-              class="w-12 h-12 mx-auto" />
-          <p class="mt-2">Looker Studio</p>
         </div>
       </div>
 
@@ -213,8 +208,6 @@
 
   <!-- Footer -->
   <footer class="bg-white py-4 text-center text-sm">
-    © 2025 DK.
+    © 2026 DK.
   </footer>
 </template>
-
-
