@@ -108,6 +108,12 @@
     <h3 class="text-2xl font-bold mb-8 text-center">Selected Projects</h3>
     <div class="grid md:grid-cols-2 gap-8">
       <div class="bg-white shadow rounded p-6">
+        <h4 class="text-xl font-semibold mb-2">Danapera</h4>
+        <p class="mb-2">PHP, Wordpress CMS</p>
+        <p class="text-sm mb-4">Company Profile</p>
+        <a href="https://danapera.com/id/" target="_blank" class="text-blue-600 hover:underline">Live Demo</a> 
+      </div>
+      <div class="bg-white shadow rounded p-6">
         <h4 class="text-xl font-semibold mb-2">Miss Indonesia 2025</h4>
         <p class="mb-2">Shadcn Vue + Tailwind CSS, Nuxt3 + Typescript, VeeValidate + Yup, i18n</p>
         <p class="text-sm mb-4">Company Profile</p>
