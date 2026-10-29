@@ -204,16 +204,31 @@
   <section id="contact" class="bg-blue-50 py-16 px-4">
     <div class="max-w-2xl mx-auto text-center">
       <h3 class="text-2xl font-bold mb-4">Let’s Work Together</h3>
-      <p class="mb-4">I am open to freelance work, project collaborations, or full-time job opportunities.  </p>
-      <p>Email: <a href="mailto:diahkhoeriah@gmail.com" target="_blank" class="hover:underline">diahkhoeriah@gmail.com</a></p>
-      <p>WhatsApp: <a href="https://wa.me/6287873293265" class=" ">+62 878-7329-3265</a></p>
-      <p>GitHub: <a href="https://github.com/diahkhoeriah" target="_blank" class="hover:underline">diahkhoeriah</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/diahkhoeriah/" target="_blank" class="hover:underline">diahkhoeriah</a></p>
+      <p class="mb-8">I am open to freelance work, project collaborations, or full-time job opportunities.</p>
+      <a href="mailto:diahkhoeriah@gmail.com" class="inline-flex items-center gap-2 bg-blue-600 text-white text-lg px-8 py-3 rounded-lg font-semibold shadow hover:bg-blue-700 hover:shadow-lg transition">
+        <iconify-icon icon="mdi:email-outline" width="24" height="24"></iconify-icon>
+        Send Email
+      </a>
+      <p class="mt-3 text-sm text-gray-600">diahkhoeriah@gmail.com</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="https://wa.me/6287873293265" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white border border-gray-300 px-4 py-2 rounded-full hover:border-green-600 hover:text-green-700 hover:-translate-y-0.5 transition">
+          <iconify-icon icon="mdi:whatsapp" width="20" height="20"></iconify-icon>
+          WhatsApp
+        </a>
+        <a href="https://www.linkedin.com/in/diahkhoeriah/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white border border-gray-300 px-4 py-2 rounded-full hover:border-blue-700 hover:text-blue-700 hover:-translate-y-0.5 transition">
+          <iconify-icon icon="mdi:linkedin" width="20" height="20"></iconify-icon>
+          LinkedIn
+        </a>
+        <a href="https://github.com/diahkhoeriah" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white border border-gray-300 px-4 py-2 rounded-full hover:border-gray-900 hover:text-gray-900 hover:-translate-y-0.5 transition">
+          <iconify-icon icon="mdi:github" width="20" height="20"></iconify-icon>
+          GitHub
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-white py-4 text-center text-sm">
-    © 2026 DK.
+    © 2026 Diah Khoeriah
   </footer>
 </template>
