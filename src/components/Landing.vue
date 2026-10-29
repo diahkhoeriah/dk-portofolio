@@ -19,14 +19,14 @@
     <p class="text-xl mb-4">Frontend Web Developer | Fullstack Wordpress CMS, Laravel October CMS, Vue.js, Typescript, Nuxt.js</p>
     <div class="space-x-4">
       <a href="#contact" class="border border-blue-600 text-blue-600 px-6 py-2 rounded hover:bg-blue-600 hover:text-white">Contact Me</a>
-      <a href="/cv" class="border border-blue-600 text-blue-600 px-6 py-2 rounded hover:bg-blue-600 hover:text-white active:bg-blue-600">Download CV</a>
+      <a href="/CV-Diah-Khoeriah.pdf" download="CV-Diah-Khoeriah.pdf" class="border border-blue-600 text-blue-600 px-6 py-2 rounded hover:bg-blue-600 hover:text-white active:bg-blue-600">Download CV</a>
     </div>
   </section>
 
   <!-- About Me -->
   <section id="about" class="py-16 px-4 max-w-4xl mx-auto">
     <h3 class="text-2xl font-bold mb-4">About Me</h3>
-    <p class="text-justify">I am a frontend web developer with over 7 years of experience in building responsive web interfaces using Laravel alongside OctoberCMS, WordPress CMS, and modern technologies such as Vue.js, TypeScript, and Nuxt.js. Likes to learn new things and is used to working in teams and individually.</p>
+    <p class="text-justify">I'm a frontend web developer with 7+ years of experience at MNC Group, where I've built websites for brands like MNC Tourism Indonesia, Miss Indonesia, and Livelt International. I work mainly with Vue.js, Nuxt.js, and TypeScript, and I also build CMS-driven sites with WordPress and Laravel OctoberCMS. I enjoy turning designs into fast, responsive interfaces and I'm always learning something new.</p>
   </section>
 
   <!-- Skills -->
@@ -135,13 +135,13 @@
         <h4 class="text-xl font-semibold mb-2">Dashboard Perindo Member Area</h4>
         <p class="mb-2">Vue, Nuxt</p>
         <p class="text-sm mb-4">Dashboard</p>
-        <a href="" class="text-blue-600 hover:underline">Live Demo</a> 
+        <span class="inline-block text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded cursor-default">Internal / Private Project</span>
       </div>
       <div class="bg-white shadow rounded p-6">
         <h4 class="text-xl font-semibold mb-2">Dashboard NextSys Hospitality</h4>
         <p class="mb-2">Vue, Nuxt + Typescript</p>
         <p class="text-sm mb-4">Dashboard</p>
-        <a href="" class="text-blue-600 hover:underline">Live Demo</a> 
+        <span class="inline-block text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded cursor-default">Internal / Private Project</span>
       </div>
       <div class="bg-white shadow rounded p-6">
         <h4 class="text-xl font-semibold mb-2">livelt International</h4>
@@ -174,10 +174,10 @@
         <a href="https://lidoadventurepark.com" target="_blank" class="text-blue-600 hover:underline">Live Demo</a>
       </div>  
       <div class="bg-white shadow rounded p-6">
-        <h4 class="text-xl font-semibold mb-2">MNC Land</h4>
+        <h4 class="text-xl font-semibold mb-2">MNC Tourism Indonesia</h4>
         <p class="mb-2">PHP, Laravel October CMS</p>
         <p class="text-sm mb-4">Company Profile</p>
-        <a href="https://mncland.com/" target="_blank" class="text-blue-600 hover:underline">Live Demo</a>
+        <a href="https://mnctourismindonesia.com/" target="_blank" class="text-blue-600 hover:underline">Live Demo</a>
       </div>
       <div class="bg-white shadow rounded p-6">
         <h4 class="text-xl font-semibold mb-2">Federasi Futsal Indonesia</h4>

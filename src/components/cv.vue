@@ -1,11 +1,11 @@
 <script setup lang="ts"></script>
 <template>
-  <section class="grid grid-cols-[450px_1fr] h-auto min-h-0">
+  <section class="grid grid-cols-1 md:grid-cols-[450px_1fr] print:grid-cols-[450px_1fr] h-auto min-h-0">
     <div class="bg-[#D9C3BF] h-auto ">
           <div class="pt-9 pb-5 px-8">
             <div class="flex justify-center mx-auto mb-10">
-              <div class="w-[300px] h-[300px] rounded-full border border-blue-600">
-                <img src="../assets/images/profile.jpg" alt="profile" class="w-[300px] h-[300px] rounded-full object-fill">
+              <div class="w-[240px] h-[240px] md:w-[300px] md:h-[300px] print:w-[300px] print:h-[300px] rounded-full border border-blue-600">
+                <img src="../assets/images/profile.jpg" alt="profile" class="w-full h-full rounded-full object-cover">
               </div>
             </div>
           <div>
@@ -48,7 +48,7 @@
         </div>
         <div>
           <h2 class="py-2 px-4 bg-[#0F172A] text-2xl font-bold uppercase text-[#D9C3BF]">PROJECTS</h2>
-          <ul class="list-disc px-4 mt-5 mb-56 pl-8 space-y-1">
+          <ul class="list-disc px-4 mt-5 mb-10 md:mb-56 print:mb-56 pl-8 space-y-1">
             <li>Miss Indonesia 2025</li>
             <li>Enliven</li>
             <li>Ancestry</li>
@@ -59,7 +59,7 @@
             <li>MNC Investor Forum 2022</li>
             <li>MNC Insurance Broker</li>
             <li>Lido Adventure Park</li>
-            <li>MNC Land</li>
+            <li>MNC Tourism Indonesia</li>
             <li>Federasi Futsal Indonesia</li>
             <li>MNC Financial Services</li>
             <li>Trump Residences Indonesia</li>
@@ -68,15 +68,15 @@
       </div>
     </div>
     <div class="bg-white">
-      <div class="bg-[#0F172A] px-8 py-20 text-center mt-9 mb-4">
-        <h1 class="text-2xl font-bold text-6xl text-[#D9C3BF]">Diah Khoeriah</h1>
+      <div class="bg-[#0F172A] px-4 py-12 md:px-8 md:py-20 print:px-8 print:py-20 text-center md:mt-9 print:mt-9 mb-4">
+        <h1 class="text-4xl md:text-6xl print:text-6xl font-bold text-[#D9C3BF]">Diah Khoeriah</h1>
         <p class="mt-2 text-2xl text-white">Frontend Web Developer</p>
       </div>
-      <div class="pl-8 pr-24 pt-4">
+      <div class="px-4 md:pl-8 md:pr-24 print:pl-8 print:pr-24 pt-4">
         <div>
           <h2 class="py-2 px-4 bg-[#0F172A] text-2xl font-bold uppercase text-[#D9C3BF]">SUMMARY</h2>
           <div class="px-4 mt-5 mb-14">
-            <p class="mt-2 mb-6 leading-[1.8]">I am a frontend web developer with over 7 years of experience in building responsive web interfaces using Laravel alongside OctoberCMS, WordPress CMS, and modern technologies such as Vue.js, TypeScript, and Nuxt.js. Likes to learn new things and is used to working in teams and individually.</p>
+            <p class="mt-2 mb-6 leading-[1.8]">Frontend Web Developer with 7+ years of experience at MNC Group, building 15+ responsive company profiles, event sites, and dashboards with Vue.js, Nuxt.js, TypeScript, WordPress, and Laravel OctoberCMS. Experienced in turning designs into pixel-accurate interfaces and integrating them with REST APIs. Comfortable working both in teams and independently.</p>
           </div>
         </div>
         <div>
@@ -106,10 +106,10 @@
          <div>
           <h2 class="py-2 px-4 bg-[#0F172A] text-2xl font-bold uppercase text-[#D9C3BF]">TRAINING</h2>
           <div class="px-4 mt-5 last:mb-0">
-            <ul class="list-disc px-4 mt-5 mb-56 pl-8 space-y-2">
-              <li>Certificate Of Copetence Mikrotik | March 2014</li>
-              <li>Certificate Of Copetence Training Of Web Programmin Basics | April 2014</li>
-              <li>Certificate Of Copetence Junior Web Programmer | September 2015</li>
+            <ul class="list-disc px-4 mt-5 mb-10 md:mb-56 print:mb-56 pl-8 space-y-2">
+              <li>Certificate Of Competence Mikrotik | March 2014</li>
+              <li>Certificate Of Competence Training Of Web Programming Basics | April 2014</li>
+              <li>Certificate Of Competence Junior Web Programmer | September 2015</li>
             </ul>
           </div>
         </div>
