@@ -1,5 +1,17 @@
 <script setup lang="ts">
 import { onBeforeUnmount, type Directive } from 'vue'
+import ancestryImg from '../assets/images/projects/ancestry.webp'
+import danaperaImg from '../assets/images/projects/danapera.webp'
+import enlivenImg from '../assets/images/projects/enliven.webp'
+import lidoImg from '../assets/images/projects/lido.webp'
+import liveltImg from '../assets/images/projects/livelt.webp'
+import livetteImg from '../assets/images/projects/livette.webp'
+import missIndonesiaImg from '../assets/images/projects/miss-indonesia.webp'
+import mncFinancialImg from '../assets/images/projects/mnc-financial.webp'
+import mncInsuranceBrokerImg from '../assets/images/projects/mnc-insurance-broker.webp'
+import mncInvestorForumImg from '../assets/images/projects/mnc-investor-forum.webp'
+import mncTourismImg from '../assets/images/projects/mnc-tourism.webp'
+import trumpImg from '../assets/images/projects/trump.webp'
 
 // Fade-in saat elemen masuk ke layar. Dipasang lewat directive v-reveal supaya
 // elemen yang dibuat ulang (mis. saat hot reload) ikut terdaftar lagi.
@@ -48,6 +60,24 @@ const aiTools: { name: string; icon: string }[] = [
   { name: 'OpenAI Codex', icon: 'logos:codex' },
   { name: 'Gemini', icon: 'devicon:gemini' },
   { name: 'GitHub Copilot', icon: 'logos:github-copilot' },
+]
+// Thumbnail: screenshot halaman depan tiap website (1280x800, dikecilkan ke 720x450 WebP)
+const projects: { name: string; stack: string; type: string; url?: string; image?: string }[] = [
+  { name: 'Danapera', stack: 'PHP, WordPress CMS', type: 'Company Profile', url: 'https://danapera.com/id/', image: danaperaImg },
+  { name: 'Miss Indonesia 2025', stack: 'Shadcn Vue + Tailwind CSS, Nuxt 3 + TypeScript, VeeValidate + Yup, i18n', type: 'Company Profile', url: 'https://missindonesia.id/', image: missIndonesiaImg },
+  { name: 'Enliven', stack: 'PHP, WordPress CMS', type: 'Company Profile', url: 'https://enliven-jakarta.com/', image: enlivenImg },
+  { name: 'Ancestry', stack: 'PHP, WordPress CMS', type: 'Company Profile', url: 'https://ancestry-jakarta.com/', image: ancestryImg },
+  { name: 'Dashboard Perindo Member Area', stack: 'Vue, Nuxt', type: 'Dashboard' },
+  { name: 'Dashboard NextSys Hospitality', stack: 'Vue, Nuxt + TypeScript', type: 'Dashboard' },
+  { name: 'Livelt International', stack: 'PHP, WordPress CMS', type: 'Company Profile', url: 'https://livelt-international.com/', image: liveltImg },
+  { name: 'Livette', stack: 'PHP, WordPress CMS', type: 'Company Profile', url: 'https://livette.id/', image: livetteImg },
+  { name: 'MNC Investor Forum 2022', stack: 'HTML, CSS, JavaScript', type: 'Event Website', url: 'https://mncinvestorforum.com/', image: mncInvestorForumImg },
+  { name: 'MNC Insurance Broker', stack: 'PHP, WordPress CMS', type: 'Company Profile', url: 'https://www.mnc-insurancebroker.com/', image: mncInsuranceBrokerImg },
+  { name: 'Lido Adventure Park', stack: 'PHP, Laravel OctoberCMS', type: 'Company Profile', url: 'https://lidoadventurepark.com', image: lidoImg },
+  { name: 'MNC Tourism Indonesia', stack: 'PHP, Laravel OctoberCMS', type: 'Company Profile', url: 'https://mnctourismindonesia.com/', image: mncTourismImg },
+  { name: 'Federasi Futsal Indonesia', stack: 'PHP, Laravel OctoberCMS', type: 'Company Profile', url: 'https://futsalindonesia.org/' },
+  { name: 'MNC Financial Services', stack: 'PHP, WordPress CMS', type: 'Company Profile', url: 'https://www.mncfinancialservices.com/id/', image: mncFinancialImg },
+  { name: 'Trump Residences Indonesia', stack: 'PHP, Laravel OctoberCMS', type: 'Company Profile', url: 'https://trumpresidencesindonesia.com/', image: trumpImg },
 ]
 </script>
 
@@ -175,99 +205,59 @@ const aiTools: { name: string; icon: string }[] = [
   </section>
   
   <!-- Projects -->
-  <section id="projects" class="py-16 px-4 max-w-6xl mx-auto">
-    <h3 v-reveal class="text-2xl font-bold mb-8 text-center">Selected Projects</h3>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div v-reveal class="bg-white shadow rounded p-6 hover:-translate-y-1 hover:shadow-lg">
-        <h4 class="text-xl font-semibold mb-2">Danapera</h4>
-        <p class="mb-2">PHP, Wordpress CMS</p>
-        <p class="text-sm mb-4">Company Profile</p>
-        <a href="https://danapera.com/id/" target="_blank" class="text-blue-600 hover:underline">Live Demo</a> 
-      </div>
-      <div v-reveal class="bg-white shadow rounded p-6 hover:-translate-y-1 hover:shadow-lg">
-        <h4 class="text-xl font-semibold mb-2">Miss Indonesia 2025</h4>
-        <p class="mb-2">Shadcn Vue + Tailwind CSS, Nuxt3 + Typescript, VeeValidate + Yup, i18n</p>
-        <p class="text-sm mb-4">Company Profile</p>
-        <a href="https://missindonesia.id/id" target="_blank" class="text-blue-600 hover:underline">Live Demo</a> 
-      </div>
-      <div v-reveal class="bg-white shadow rounded p-6 hover:-translate-y-1 hover:shadow-lg">
-        <h4 class="text-xl font-semibold mb-2">Enliven</h4>
-        <p class="mb-2">PHP, Wordpress CMS</p>
-        <p class="text-sm mb-4">Company Profile</p>
-        <a href="https://enliven-jakarta.com/" target="_blank" class="text-blue-600 hover:underline">Live Demo</a> 
-      </div>
-      <div v-reveal class="bg-white shadow rounded p-6 hover:-translate-y-1 hover:shadow-lg">
-        <h4 class="text-xl font-semibold mb-2">Ancestry</h4>
-        <p class="mb-2">PHP, Wordpress CMS</p>
-        <p class="text-sm mb-4">Company Profile</p>
-        <a href="https://ancestry-jakarta.com/" target="_blank" class="text-blue-600 hover:underline">Live Demo</a> 
-      </div>
-      <div v-reveal class="bg-white shadow rounded p-6 hover:-translate-y-1 hover:shadow-lg">
-        <h4 class="text-xl font-semibold mb-2">Dashboard Perindo Member Area</h4>
-        <p class="mb-2">Vue, Nuxt</p>
-        <p class="text-sm mb-4">Dashboard</p>
-        <span class="inline-block text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded cursor-default">Internal / Private Project</span>
-      </div>
-      <div v-reveal class="bg-white shadow rounded p-6 hover:-translate-y-1 hover:shadow-lg">
-        <h4 class="text-xl font-semibold mb-2">Dashboard NextSys Hospitality</h4>
-        <p class="mb-2">Vue, Nuxt + Typescript</p>
-        <p class="text-sm mb-4">Dashboard</p>
-        <span class="inline-block text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded cursor-default">Internal / Private Project</span>
-      </div>
-      <div v-reveal class="bg-white shadow rounded p-6 hover:-translate-y-1 hover:shadow-lg">
-        <h4 class="text-xl font-semibold mb-2">livelt International</h4>
-        <p class="mb-2">PHP, Wordpress CMS</p>
-        <p class="text-sm mb-4">Company Profile</p>
-        <a href="https://livelt-international.com/" target="_blank" class="text-blue-600 hover:underline">Live Demo</a> 
-      </div>
-      <div v-reveal class="bg-white shadow rounded p-6 hover:-translate-y-1 hover:shadow-lg">
-        <h4 class="text-xl font-semibold mb-2">Livette</h4>
-        <p class="mb-2">PHP, Wordpress CMS</p>
-        <p class="text-sm mb-4">Company Profile</p>
-        <a href="https://livette.id/" target="_blank" class="text-blue-600 hover:underline">Live Demo</a> 
-      </div>
-      <div v-reveal class="bg-white shadow rounded p-6 hover:-translate-y-1 hover:shadow-lg">
-       <h4 class="text-xl font-semibold mb-2">MNC Investor Forum 2022</h4>
-       <p class="mb-2">HTML, CSS, Javascript</p>
-       <p class="text-sm mb-4">Event Investor Relations Website</p>
-       <a href="https://mncinvestorforum.com/" target="_blank" class="text-blue-600 hover:underline">Live Demo</a> 
-     </div>
-      <div v-reveal class="bg-white shadow rounded p-6 hover:-translate-y-1 hover:shadow-lg">
-        <h4 class="text-xl font-semibold mb-2">MNC Insurance Broker</h4>
-        <p class="mb-2">PHP, Wordpress CMS</p>
-        <p class="text-sm mb-4">Company Profile</p>
-        <a href="https://www.mnc-insurancebroker.com/id/" target="_blank" class="text-blue-600 hover:underline">Live Demo</a> 
-      </div> 
-      <div v-reveal class="bg-white shadow rounded p-6 hover:-translate-y-1 hover:shadow-lg">
-        <h4 class="text-xl font-semibold mb-2">Lido Adventure Park</h4>
-        <p class="mb-2">PHP, Laravel October CMS</p>
-        <p class="text-sm mb-4">Company Profile</p>
-        <a href="https://lidoadventurepark.com" target="_blank" class="text-blue-600 hover:underline">Live Demo</a>
-      </div>  
-      <div v-reveal class="bg-white shadow rounded p-6 hover:-translate-y-1 hover:shadow-lg">
-        <h4 class="text-xl font-semibold mb-2">MNC Tourism Indonesia</h4>
-        <p class="mb-2">PHP, Laravel October CMS</p>
-        <p class="text-sm mb-4">Company Profile</p>
-        <a href="https://mnctourismindonesia.com/" target="_blank" class="text-blue-600 hover:underline">Live Demo</a>
-      </div>
-      <div v-reveal class="bg-white shadow rounded p-6 hover:-translate-y-1 hover:shadow-lg">
-        <h4 class="text-xl font-semibold mb-2">Federasi Futsal Indonesia</h4>
-        <p class="mb-2">PHP, Laravel October CMS</p>
-        <p class="text-sm mb-4">Company Profile</p>
-        <a href="https://futsalindonesia.org/" target="_blank" class="text-blue-600 hover:underline">Live Demo</a> 
-      </div>
-      <div v-reveal class="bg-white shadow rounded p-6 hover:-translate-y-1 hover:shadow-lg">
-        <h4 class="text-xl font-semibold mb-2">MNC Financial Services</h4>
-        <p class="mb-2">PHP, Wordpress CMS</p>
-        <p class="text-sm mb-4">Company Profile</p>
-        <a href="https://www.mncfinancialservices.com/id/" target="_blank" class="text-blue-600 hover:underline">Live Demo</a> 
-      </div>
-      <div v-reveal class="bg-white shadow rounded p-6 hover:-translate-y-1 hover:shadow-lg">
-        <h4 class="text-xl font-semibold mb-2">Trump Residences Indonesia</h4>
-        <p class="mb-2">PHP, Laravel October CMS</p>
-        <p class="text-sm mb-4">Company Profile</p>
-        <a href="https://trumpresidencesindonesia.com/" target="_blank" class="text-blue-600 hover:underline">Live Demo</a> 
-      </div>
+  <section id="projects" class="py-16 md:py-24 px-4 max-w-6xl mx-auto">
+    <div v-reveal class="text-center mb-10">
+      <p class="text-sm font-semibold uppercase tracking-widest text-blue-600 mb-2">Portfolio</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Selected Projects</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+      <article
+        v-for="project in projects"
+        :key="project.name"
+        v-reveal
+        class="group flex flex-col bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden hover:-translate-y-1 hover:shadow-lg"
+      >
+        <a
+          v-if="project.image"
+          :href="project.url"
+          target="_blank"
+          rel="noopener"
+          class="block aspect-[16/10] overflow-hidden bg-gray-100 border-b border-gray-100"
+          :aria-label="`Open ${project.name}`"
+        >
+          <img
+            :src="project.image"
+            :alt="`Screenshot of ${project.name} website`"
+            loading="lazy"
+            width="720"
+            height="450"
+            class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105"
+          />
+        </a>
+        <div
+          v-else
+          class="aspect-[16/10] flex flex-col items-center justify-center gap-2 bg-gradient-to-br from-slate-800 to-slate-900 text-slate-300 border-b border-gray-100"
+        >
+          <iconify-icon :icon="project.url ? 'mdi:web' : 'mdi:lock-outline'" width="40" height="40"></iconify-icon>
+          <span class="text-sm font-medium">{{ project.url ? project.name : 'Internal Dashboard' }}</span>
+        </div>
+        <div class="flex flex-col flex-1 p-5">
+          <p class="text-xs font-semibold uppercase tracking-wider text-blue-600 mb-1">{{ project.type }}</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">{{ project.name }}</h3>
+          <p class="text-sm text-gray-600 mb-4">{{ project.stack }}</p>
+          <a
+            v-if="project.url"
+            :href="project.url"
+            target="_blank"
+            rel="noopener"
+            class="mt-auto inline-flex items-center gap-1 text-sm font-semibold text-blue-600 hover:underline"
+          >
+            Live Demo
+            <iconify-icon icon="mdi:arrow-top-right" width="16" height="16"></iconify-icon>
+          </a>
+          <span v-else class="mt-auto self-start text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded cursor-default">Internal / Private Project</span>
+        </div>
+      </article>
     </div>
   </section>
 
