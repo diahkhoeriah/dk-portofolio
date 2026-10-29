@@ -43,7 +43,7 @@
             <li>REST API</li>
             <li>Wordpress CMS</li>
             <li>Git</li>
-            <li>MS.Office</li>
+            <li>AI Coding Tools: Claude, OpenAI Codex, Gemini, GitHub Copilot</li>
           </ul>
         </div>
         <div>
@@ -70,13 +70,13 @@
     <div class="bg-white">
       <div class="bg-[#0F172A] px-4 py-12 md:px-8 md:py-20 print:px-8 print:py-20 text-center md:mt-9 print:mt-9 mb-4">
         <h1 class="text-4xl md:text-6xl print:text-6xl font-bold text-[#D9C3BF]">Diah Khoeriah</h1>
-        <p class="mt-2 text-2xl text-white">Frontend Web Developer</p>
+        <p class="mt-2 text-2xl text-white">Frontend Developer</p>
       </div>
       <div class="px-4 md:pl-8 md:pr-24 print:pl-8 print:pr-24 pt-4">
         <div>
           <h2 class="py-2 px-4 bg-[#0F172A] text-2xl font-bold uppercase text-[#D9C3BF]">SUMMARY</h2>
           <div class="px-4 mt-5 mb-14">
-            <p class="mt-2 mb-6 leading-[1.8]">Frontend Web Developer with 7+ years of experience at MNC Group, building 15+ responsive company profiles, event sites, and dashboards with Vue.js, Nuxt.js, TypeScript, WordPress, and Laravel OctoberCMS. Experienced in turning designs into pixel-accurate interfaces and integrating them with REST APIs. Comfortable working both in teams and independently.</p>
+            <p class="mt-2 mb-6 leading-[1.8]">Frontend Developer with 7+ years of experience at MNC Group, building 15+ responsive company profiles, event sites, and dashboards with Vue.js, Nuxt.js, TypeScript, WordPress, and Laravel OctoberCMS. Experienced in turning designs into pixel-accurate interfaces and integrating them with REST APIs. Comfortable working both in teams and independently.</p>
           </div>
         </div>
         <div>

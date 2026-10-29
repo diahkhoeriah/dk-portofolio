@@ -1,1 +1,35 @@
 @import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Beri jarak untuk navbar sticky saat lompat ke #about, #projects, dst. */
+html {
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+}
+
+/* Fade-in saat scroll (dipicu dari Landing.vue) */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, translate 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
