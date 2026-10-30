@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onBeforeUnmount, type Directive } from 'vue'
+import { onBeforeUnmount, ref, type Directive } from 'vue'
 import ancestryImg from '../assets/images/projects/ancestry.webp'
 import danaperaImg from '../assets/images/projects/danapera.webp'
 import enlivenImg from '../assets/images/projects/enliven.webp'
@@ -38,6 +38,14 @@ const vReveal: Directive<HTMLElement> = {
 }
 
 onBeforeUnmount(() => observer?.disconnect())
+
+const navLinks = [
+  { label: 'About', href: '#about' },
+  { label: 'Skills', href: '#skills' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Contact', href: '#contact' },
+]
+const menuOpen = ref(false)
 
 // Ikon dari set "logos" Iconify (https://icon-sets.iconify.design/logos/)
 const skills: { name: string; icon: string; iconClass?: string }[] = [
@@ -85,14 +93,32 @@ const projects: { name: string; stack: string; type: string; url?: string; image
   <!-- Navbar -->
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="/"class="text-xl font-bold">DK</a>
-      <nav class="space-x-4">
-        <a href="#about" class="hover:text-blue-600">About</a>
-        <a href="#skills" class="hover:text-blue-600">Skills</a>
-        <a href="#projects" class="hover:text-blue-600">Projects</a>
-        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      <a href="/" class="text-xl font-bold">DK</a>
+      <nav class="hidden sm:flex gap-6">
+        <a v-for="link in navLinks" :key="link.href" :href="link.href" class="hover:text-blue-600">{{ link.label }}</a>
       </nav>
+      <button
+        type="button"
+        class="sm:hidden flex -my-2 -mr-2 p-2 rounded-lg text-gray-700 hover:bg-gray-100"
+        :aria-expanded="menuOpen"
+        aria-controls="mobile-menu"
+        aria-label="Toggle menu"
+        @click="menuOpen = !menuOpen"
+      >
+        <iconify-icon :icon="menuOpen ? 'mdi:close' : 'mdi:menu'" width="26" height="26"></iconify-icon>
+      </button>
     </div>
+    <nav v-show="menuOpen" id="mobile-menu" class="sm:hidden border-t border-gray-100 px-4 py-2">
+      <a
+        v-for="link in navLinks"
+        :key="link.href"
+        :href="link.href"
+        class="block py-3 font-medium text-gray-700 hover:text-blue-600"
+        @click="menuOpen = false"
+      >
+        {{ link.label }}
+      </a>
+    </nav>
   </header>
   
   <!-- Hero -->

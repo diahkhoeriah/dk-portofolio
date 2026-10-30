@@ -35,7 +35,6 @@
             <li>JavaScript</li>
             <li>Tailwind CSS</li>
             <li>Vue</li>
-            <li>React</li>
             <li>TypeScript</li>
             <li>Nuxt</li>
             <li>PHP</li>
